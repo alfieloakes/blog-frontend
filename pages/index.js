@@ -7,7 +7,7 @@ export default function Home() {
     <div className="container mx-auto font-sans">
       <nav className="flex items-center justify-between flex-wrap mx-auto p-4 max-w-screen-lg">
         <div className="flex items-center flex-no-shrink mr-6">
-          <h2 className="font-semibold text-2xl tracking-tight">Alfie Loakes</h2>
+          <h2 className="font-bold text-2xl">Alfie Loakes</h2>
         </div>
         <div className="block lg:hidden">
           <button className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm lg:flex-grow"></div>
-          <div className="text-md">
+          <div className="text-sm">
             <a
               href="#responsive-header"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-6"
@@ -46,10 +46,10 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="max-w-screen-md mx-auto">
-        <div className="py-28">
-          <h1 className="font-bold text-3xl py-2">Hi there 👋</h1>
-          <h2 className="text-gray-600">
+      <div className="max-w-screen-sm mx-auto">
+        <div className="py-32">
+          <h1 className="font-bold text-3xl pb-5">Hi there 👋</h1>
+          <h2 className="text-gray-500">
             My personal blog about all things software engineering.
           </h2>
           <div className="py-6 flex">
@@ -60,6 +60,47 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="max-w-screen-sm mx-auto bg-white rounded-md mb-5">
+        <div className="p-5">
+          <h3 className="font-bold text-xl pb-2">
+            Lorem ipsum dolor sit amet, consectetur
+          </h3>
+          <p className="text-gray-500 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec
+            ligula rhoncus, mattis velit quis, fringilla erat. Integer rhoncus
+            ornare est in ullamcorper. Sed sollicitudin lacus sed purus dictum
+            egestas.
+          </p>
+
+          <div className="flex items-center justify-between text-sm text-gray-400 pt-2">
+            <p>September 26, 2021</p>
+            <p>10 min</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-screen-sm mx-auto bg-white rounded-md">
+        <div className="p-5">
+          <h3 className="font-bold text-xl pb-2">
+            Lorem ipsum dolor sit amet, consectetur
+          </h3>
+          <p className="text-gray-500 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec
+            ligula rhoncus, mattis velit quis, fringilla erat. Integer rhoncus
+            ornare est in ullamcorper. Sed sollicitudin lacus sed purus dictum
+            egestas.
+          </p>
+
+          <div className="flex items-center justify-between text-sm text-gray-400 pt-2">
+            <p>September 26, 2021</p>
+            <p>10 min</p>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   );
 }
