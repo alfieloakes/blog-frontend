@@ -1,17 +1,18 @@
 // import Head from "next/head";
-import "tailwindcss/tailwind.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <div className="container">
-      <nav class="flex items-center justify-between flex-wrap max-auto p-6">
-        <div class="flex items-center flex-no-shrink mr-6">
-          <h2 class="font-semibold text-xl tracking-tight">Alfie Loakes</h2>
+    <div className="container mx-auto font-sans">
+      <nav className="flex items-center justify-between flex-wrap mx-auto p-4 max-w-screen-lg">
+        <div className="flex items-center flex-no-shrink mr-6">
+          <h2 className="font-semibold text-2xl tracking-tight">Alfie Loakes</h2>
         </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+        <div className="block lg:hidden">
+          <button className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
             <svg
-              class="h-3 w-3"
+              className="h-3 w-3"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -20,30 +21,45 @@ export default function Home() {
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow"></div>
-          <div>
+        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div className="text-sm lg:flex-grow"></div>
+          <div className="text-md">
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-6"
             >
               About
             </a>
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-6"
             >
               Categories
             </a>
             <a
               href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white"
             >
               Projects
             </a>
           </div>
         </div>
       </nav>
+
+      <div className="max-w-screen-md mx-auto">
+        <div className="py-28">
+          <h1 className="font-bold text-3xl py-2">Hi there 👋</h1>
+          <h2 className="text-gray-600">
+            My personal blog about all things software engineering.
+          </h2>
+          <div className="py-6 flex">
+            <div className="pr-3">
+              <FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon>
+            </div>
+            <FontAwesomeIcon size="2x" icon={faStackOverflow}></FontAwesomeIcon>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
