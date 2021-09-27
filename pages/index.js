@@ -100,7 +100,11 @@ export default function Home() {
       </div>
 
 
-
+      <footer className="text-center py-5 text-gray-500 mt-5">
+          <div className="text-xs">
+            <p>&copy; {new Date().getFullYear()} Alfie Loakes</p>
+          </div>
+      </footer>
     </div>
   );
 }
