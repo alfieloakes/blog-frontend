@@ -1,6 +1,5 @@
-// import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -30,18 +29,6 @@ export default function Home() {
             >
               About
             </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-6"
-            >
-              Categories
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white"
-            >
-              Projects
-            </a>
           </div>
         </div>
       </nav>
@@ -54,9 +41,9 @@ export default function Home() {
           </h2>
           <div className="py-6 flex">
             <div className="pr-3">
-              <FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon>
+              <a href="https://github.com/alfieloakes"><FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon></a>
             </div>
-            <FontAwesomeIcon size="2x" icon={faStackOverflow}></FontAwesomeIcon>
+            <a href="https://www.linkedin.com/in/alfieloakes"><FontAwesomeIcon size="2x" icon={faLinkedin}></FontAwesomeIcon></a>
           </div>
         </div>
       </div>
