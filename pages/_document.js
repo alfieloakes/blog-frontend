@@ -1,6 +1,7 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 
 class MyDocument extends Document {
@@ -12,6 +13,7 @@ class MyDocument extends Document {
           <Header />
           <Main />
           <NextScript />
+          <Footer />
         </body>
       </Html>
     );
